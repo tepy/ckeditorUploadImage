@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', "CkeditorController@index");
 
 Route::get("ckeditor", "CkeditorController@index");
 Route::post('ckeditor/upload', 'CkeditorController@upload')->name('ckeditor.upload');
